@@ -46,9 +46,9 @@ public class ArrayList implements List {
 			Object[] elementData1 = new Object[1];
 			elementData1=Arrays.copyOfRange(elementData, 0, index);
 			for(int i=index;i<elementData.length;i++){
-				elementData1.
 			}
 		}
+		return null;
 	}
 
 	public int size() {
