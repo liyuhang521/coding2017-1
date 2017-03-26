@@ -8,15 +8,21 @@ import org.junit.Test;
 import com.coding.basic.ArrayList;
 
 public class ArrayListTest {
-private static ArrayList arraylist=new ArrayList();
-/*private static Object[] elementData = new Object[1];*/
-	@Before
-	public void setUp() throws Exception {
-	}
+	private static ArrayList arraylist = new ArrayList();
+
+	/* private static Object[] elementData = new Object[1]; */
 
 	@Test
 	public void testAddObject() {
-		fail("Not yet implemented");
+		for (int i = -3; i < 10000; i++) {
+			arraylist.add("2"+i);
+			
+		}
+		for (int i = -3; i < 10000; i++) {
+			assertEquals("2"+i, arraylist.get(i + 3));
+			
+		}
+		
 	}
 
 	@Test
